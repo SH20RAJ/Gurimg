@@ -17,9 +17,10 @@ var feedback = function(res) {
     reportInfo(res, true);
     if (res.success === true) {
         var get_link = res.data.link.replace(/^http:\/\//i, 'https://');
-        document.querySelector('.status').classList.add('bg-success');
+        var get_id = get_link.substr(20);
+        get_id = get_id.slice(-get_id.length,-4)
         var content =
-            'Image : ' + '<br><input class="image-url" value=\"' + get_link + '\"/>' 
+        'Sharing Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"https://gurimg.sh20raj.repl.co/image/?id=' + get_id + '\"/><br><hr><br>Direct Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"' + get_link + '\"/><br><br><hr>' 
              + '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
         addImg('.status', content);
     }
