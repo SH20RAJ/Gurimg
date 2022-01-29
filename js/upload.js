@@ -20,7 +20,7 @@ var feedback = function(res) {
         var get_id = get_link.substr(20);
         get_id = get_id.slice(-get_id.length,-4)
         var content =
-        'Sharing Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"https://gurimg.sh20raj.repl.co/image/?id=' + get_id + '\"/><br><hr><br>Direct Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"' + get_link + '\"/><br><br><hr>' 
+        '<h2>Sharing Code :- <code>'+ get_id +'</code> </h2><br>Sharing Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"https://gurimg.sh20raj.repl.co/image/?id=' + get_id + '\"/><br><hr><br>Direct Image Link : ' + '<br><input class="image-url" class="btn btn-outline-success" value=\"' + get_link + '\"/><br><br><hr>' 
              + '<img class="img" alt="Imgur-Upload" src=\"' + get_link + '\"/>';
         addImg('.status', content);
     }
