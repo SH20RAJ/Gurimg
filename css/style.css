@@ -1,6 +1,8 @@
 @charset "UTF-8";
 
 /* Imgur Upload Style */
+body ,.color-change-3x{animation:color-change-3x 4s linear infinite alternate both}
+@keyframes color-change-3x{0%{background:hsl(184, 82%, 60%)}50%{background:#bc61f1}100%{background:#f16161}}
 
 .img {
   margin-top: 0;
