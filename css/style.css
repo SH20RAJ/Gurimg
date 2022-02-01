@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* Imgur Upload Style */
-body ,.color-change-3x{animation:color-change-3x 4s linear infinite alternate both}
+.color-change-3x{animation:color-change-3x 4s linear infinite alternate both}
 @keyframes color-change-3x{0%{background:hsl(184, 82%, 60%)}50%{background:#bc61f1}100%{background:#f16161}}
 
 .img {
@@ -116,4 +116,15 @@ button:hover,.btn:hover {
 button:active,.btn:active {
  transform: translate(0.05em, 0.05em);
  box-shadow: 0.05em 0.05em;
+}
+footer a {
+  text-decoration: none;
+}
+footer {
+    background: #000;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
 }
